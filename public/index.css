@@ -3,7 +3,7 @@
 body {
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
 	margin: 0;
-	background: #111;
+	background: #f5f5f7; /* Changed from dark #111 to clean grayish-white */
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -31,17 +31,17 @@ body {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: #111;
+	background-color: #f5f5f7; /* Matched to new body background */
 }
 
 #sj-error {
-	color: #ff6666 !important;
+	color: #ff3333 !important; /* Slightly darkened for better readability on light mode */
 	white-space: pre-wrap;
 }
 
 #sj-error-code {
 	font-size: 12px;
-	color: #fff;
+	color: #1d1d1f; /* Changed from white to charcoal text */
 	font-family: "Courier New", Courier, monospace;
 }
 
@@ -51,11 +51,11 @@ body {
 
 .logo-wrapper .text {
 	font-size: 75px;
-	color: #fff;
+	color: #1d1d1f; /* Changed from white to charcoal text */
 }
 
 .logo-wrapper h1 {
-	color: white;
+	color: #1d1d1f; /* Changed from white to charcoal text */
 }
 
 footer {
@@ -79,7 +79,7 @@ footer a,
 footer span {
 	margin: 0 15px;
 	text-decoration: none;
-	color: #fff;
+	color: #1d1d1f; /* Changed from white to charcoal text */
 	font-size: 15px;
 }
 
@@ -93,39 +93,42 @@ footer a:hover {
 
 .desc p {
 	width: 560px;
-	color: rgba(253, 253, 253, 0.514);
+	color: #515154; /* Changed from faint white to a highly readable slate gray */
 }
 
+/* --- THE REDESIGNED SEARCH BAR --- */
 #sj-address {
-	background: none;
+	background: #ffffff; /* Crisp white background for the input box */
 	font-family: inherit;
-	padding: 0px 17px;
+	padding: 0px 20px;
 	height: 48px;
-	border: 1px solid rgb(255, 255, 255, 0.2);
-	color: var(--text-color);
-	border-radius: 3px;
+	border: 1px solid #d2d2d7; /* Modern subtle border */
+	color: #1d1d1f; /* Dark text inside search bar */
 	outline: none;
-	width: 350px;
+	width: 380px;
 	margin-top: 5px;
-	border-radius: 50px;
-	color: #fff;
-	transition: border-radius 0.1s;
+	border-radius: 24px; /* Set permanent pill shape */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+	transition: all 0.2s ease-in-out;
 }
 
+/* Keeps the exact same 24px pill shape when clicked */
 #sj-address:focus {
-	border: 1px solid rgba(253, 253, 253, 0.514);
-	border-radius: 6px;
+	border: 1px solid #0071e3; /* Modern accent blue ring */
+	border-radius: 24px; /* Locked pill-to-pill shape */
+	box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .credit {
 	border-radius: 10px;
 	padding: 10px;
 	display: block;
-	border: #fff 1px solid;
-	color: #fff;
+	border: #d2d2d7 1px solid;
+	color: #1d1d1f; /* Changed text color to charcoal */
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 15px;
+	background: #ffffff;
 }
 
 .credit label {
@@ -135,7 +138,7 @@ footer a:hover {
 
 .credit a,
 .credit label {
-	color: white;
+	color: #0071e3; /* Changed to accent blue links */
 	text-decoration: underline;
 	text-align: right;
 }
@@ -143,6 +146,7 @@ footer a:hover {
 .credit pre {
 	display: none;
 	width: 100%;
+	color: #1d1d1f;
 }
 
 .credit label::after {
